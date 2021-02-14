@@ -1,0 +1,486 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.wrapper {
+  width: 100vw;
+  display: flex;
+  background-image: url("images/love.jpg");
+  background-size: cover;
+  flex-direction: column;
+  height: 1040px;
+}
+
+.greeting {
+  color: white;
+  font-weight: bold;
+  font-size: 5em;
+  margin: 1em auto;
+  font-family: 'Lobster', cursive;
+  text-shadow: black 5px 5px 5px;
+}
+
+.us {
+  background-image: url("images/us.png");
+  background-size: cover;
+  width: 20em;
+  height: 20em;
+  position: absolute;
+  left: -20em;
+  top: 20em;
+  animation-name: us;
+  animation-duration: 2.5s;
+  animation-timing-function: initial;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+}
+
+@keyframes us {
+  0% {
+    left: -20em;
+  } 100% {
+    left: 150em;
+  }
+}
+
+#pinky {
+  background-image: url("images/pinky.png");
+  background-size: cover;
+  width: 8em;
+  height: 8em;
+  margin: auto;
+  display: flex;
+  animation-name: boing;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: initial;
+  position: absolute;
+  top: 42.5em;
+  left: 50%;
+  margin-left: -4em;
+  transform: rotate(180deg);
+}
+
+@keyframes boing {
+  0% {
+    margin-top: 1em;
+  } 50% {
+    margin-top: 3.5em;
+  } 100% {
+    margin-top: 1em;
+  }
+ }
+
+#pinkySpeech {
+  font-size: 0.75em;
+  width: 10em;
+  color: rgba(255, 255, 255, 0.733);
+  position: absolute;
+  left: 50%; 
+  margin-left: -5em;
+  top: 55rem;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+@keyframes shake {
+  0% {
+    margin-top: -2em;
+    left: 15em;
+  } 50% {
+    margin-top: 2em;
+    margin-right: -2em;
+    transform: rotate(360deg);
+  } 100% {
+    margin-top: -2em;
+    left: 25em;
+  }
+}
+
+#shark {
+  position: absolute;
+  background-image: url("images/shark.gif");
+  background-size: cover;
+  width: 20em;
+  height: 20em;
+  left: 50%;
+  margin-left: -10em;
+  top: 40em;
+  opacity: 0;
+}
+
+#kyle {
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  background-color: red;
+  border-color: 1px solid black;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  margin-left: -2.5em;
+  left: 50%;
+  top: 9em;
+  opacity: 0;
+  transition: 5s;
+  font-size: 3em;
+}
+
+#kyleScreen {
+  z-index: -3;
+  background-color: black;
+  position: absolute;
+  width: 100%;
+  height: 100em;
+  display: flex;
+  flex-direction: column;
+}
+
+#kyleScreen iframe {
+  margin: 2em auto;
+}
+
+#kyleButton {
+  font-size: 3em;
+  width: 5em;
+  height: 5em;
+  color: white;
+  background-color: blue;
+  margin: auto;
+  margin-top: 0em;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#thank {
+  width: 15em;
+  height: 15em;
+  background-image: url("images/pinkiethank.png");
+  background-size: cover;
+  position: absolute;
+  left: 50%;
+  margin-left: -7.5em;
+  margin-top: 75em;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  z-index: -3;
+  display: flex;
+}
+
+#thank p {
+  font-size: 2.5em;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  margin: auto;
+  margin-bottom: 0;
+}
+
+@keyframes thank {
+  0% {
+    opacity: 0;
+    margin-top: 75em;
+  } 100% {
+    opacity: 1;
+    margin-top: 25em;
+  }
+}
+
+.adsone {
+  background-image: url("images/addddd.png");
+  background-size: contain;
+  width: 15%;
+  height: 60em;
+  margin-left: 1em;
+}
+
+.adstwo {
+  background-image: url("images/addddd.png");
+  background-size: contain;
+  width: 15%;
+  height: 60em;
+  margin-right: 1em;
+}
+
+.a-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 99vw;
+  margin: 2em auto;
+  color: white;
+  text-align: center;
+  height: fit-content;
+}
+
+.one {
+  margin: auto;
+  width: 60em;
+}
+
+.one iframe {
+  margin: 1em auto;
+}
+
+.one h2 {
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  background-color: pink;
+  text-shadow: black 2px 2px 2px;
+  font-size: 3em;
+}
+
+.one p {
+  width: fit-content;
+  margin: auto;
+}
+
+/* GAAAAAME */
+#game {
+  width: 20em;
+  height: 20em;
+  border: 1px solid white;
+  margin: 1em auto;
+  display: flex;
+  background-image: url("images/battleground.jpg");
+  background-size: cover;
+  background-position: right;
+  opacity: 0;
+  color: black;
+}
+
+#gamePlayButton {
+  position: absolute;
+  margin-left: -2.5em;
+  left: 50%;
+  margin-top: 9em;
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  font-weight: bold;
+  z-index: 3;
+}
+
+#myMonster {
+  width: 7em;
+  height: 7em;
+  background-image: url("images/myMonster.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  margin-top: 7em;
+  animation-name: myIdle;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+
+@keyframes myIdle {
+  0% {
+    margin-top: 7em;
+    transform: rotateY(0deg);
+  } 50% {
+    margin-top: 6em;
+    transform: rotateY(180deg);
+  } 100% {
+    margin-top: 7em;
+    transform: rotateY(0deg);
+  }
+}
+
+#myHealthBar {
+  width: 10em;
+  height: 2em;
+  border: 1px solid grey;
+  margin-top: 14em;
+  margin-left: 9.9em;
+  position: absolute;
+  background-color: white;
+}
+
+#enemyMonster {
+  width: 7em;
+  height: 7em;
+  background-image: url("images/enemyMonster.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  margin-top: 1em;
+  margin-left: 13em;
+  transform: rotateY(180deg);
+  animation-name: idle;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+
+#nippleBeam {
+  position: absolute;
+  width: 10em;
+  height: 0.3em;
+  transform: rotate(150deg);
+  background-color: red;
+  margin-left: 5em;
+  margin-top: 7em;
+  animation: nipples;
+  animation-duration: 0.2s;
+  animation-iteration-count: infinite;
+  opacity: 0;
+}
+
+@keyframes nipples {
+  0% {
+    margin-top: 7em;
+  } 50% {
+    margin-top: 7.5em;
+  } 100% {
+    margin-top: 7em;
+  }
+}
+
+@keyframes idle {
+  0% {
+    margin-left: 13em;
+  } 25% {
+    margin-left: 12.5em;
+    margin-top: 0.25em;
+  } 50% {
+    margin-top: 0.5em;
+    margin-left: 13.5em;
+  } 75% {
+    margin-top: 0.75em;
+    margin-left: 13.2em;
+  } 100% {
+    margin-top: 1em;
+    margin-left: 13em;
+  }
+}
+
+#enemyHealthBar {
+  width: 10em;
+  height: 2em;
+  border: 1px solid grey;
+  margin-top: 1em;
+  margin-left: 0em;
+  position: absolute;
+  background-color: white;
+}
+
+#gameInterface {
+  width: 20.1em;
+  height: 4em;
+  border: 2px solid grey;
+  background-color: white;
+  margin-top: 16em;
+  margin-left: -0.1em;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+
+.notStart {
+  transition: 2s;
+  opacity: 0;
+}
+
+#myInnerBar {
+  width: 90%;
+  height: 50%;
+  border: 1px solid black;
+  margin: auto;
+  margin-top: 0.9em;
+}
+
+#enemyInnerBar {
+  width: 90%;
+  height: 50%;
+  border: 1px solid black;
+  margin: auto;
+  margin-top: 0.9em;
+}
+
+.name {
+  font-size: 0.8em;
+  position: absolute;
+  width: fit-content;
+}
+
+#enemyInnerInnerBar {
+  height: 100%;
+  width: 100%;
+  background-color: green;
+  transition: 1s;
+}
+
+#myInnerInnerBar {
+  height: 100%;
+  width: 100%;
+  background-color: green;
+  transition: 1s;
+}
+
+#textInterface {
+  font-size: 0.8em;
+  overflow-y: hidden;
+}
+
+#liveInterface {
+  display: flex;
+  overflow-y: hidden;
+  justify-content: space-around;
+  background-color: gainsboro;
+  position: absolute;
+  width: 100%;
+  margin-top: 1.7em;
+}
+
+#attack {
+  width: 5em;
+  height: 2em;
+  border: 1px solid grey;
+  display: flex;
+  background-color: white;
+  cursor: pointer;
+}
+
+#attack p, #run p {
+  margin: auto;
+}
+
+#run {
+  width: 5em;
+  height: 2em;
+  border: 1px solid grey;
+  display: flex;
+  background-color: white;
+  cursor: pointer;
+}
+
+#stink {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("images/stink.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 3s;
+  display: none;
+}
+
+@media

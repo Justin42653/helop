@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <title>Haywey SH</title>
+</head>
+
+<body id="body" onscroll="fusion()">
+  <div id="kyleScreen">
+    <iframe width="962" height="541" src="https://www.youtube.com/embed/AtegcYGsaQo" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+    <button onclick="kyleTime()" id="kyleButton">RETURN!!!!</button>
+  </div>
+  <div class="wrapper" id="wrapper">
+
+    <h1 class="greeting">Happy Valentines Day, <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; DUDE</h1>
+
+    <div class="us" id="us"></div>
+
+    <div id="pinky"></div>
+    <div id="thank">
+      <p>fank you......</p>
+    </div>
+    <p id="pinkySpeech">"please let me return to my family, sir Justin"</p>
+    <div id="shark"></div>
+    <button id="kyle" onclick="kyleTime()">Kyle the Shrank</button>
+
+  </div>
+  <div class="a-wrapper">
+    <div class="adsone">
+    </div>
+    <section class="a">
+      <div class="one">
+        <h2>woW! It's been an whole entire four(4)!,?</h2>
+        <p>He feels like it was just yesterday when they first met &#129402; ! <br>We cannot wait to see what more the
+          future has brought, <br> I love hailey sullivan so much that I let her <br> ?? see ??? it????
+        </p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/yrYCkwll2O0" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <div class="one">
+        <h2>Beat this game to find out more!</h2>
+        <!-- GAAAMMEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE -->
+        <button id="gamePlayButton">Start</button>
+        <div id="game">
+          <!-- my pokemon -->
+          <div id="myMonster" class="notStart"></div>
+          <div id="myHealthBar" class="notStart">
+            <p class="name">&nbsp&nbspJustin Post Shave & Shower</p>
+            <div id="myInnerBar">
+              <div id="myInnerInnerBar"></div>
+            </div>
+          </div>
+          <!-- enemy pokemon -->
+          <div id="enemyMonster" class="notStart"></div>
+          <div id="nippleBeam"></div>
+          <div id="enemyHealthBar" class="notStart">
+            <p class="name">&nbsp&nbspJustin Pre Shave & Shower</p>
+            <div id="enemyInnerBar">
+              <div id="enemyInnerInnerBar"></div>
+            </div>
+          </div>
+          <!-- game interface -->
+          <div id="gameInterface" class="notStart">
+            <div id="textInterface"> Watch out gamers!!! Justin Pre Shave & Shower is here to stop Justin Post Shave &
+              Shower from advancing in life!</div>
+            <div id="liveInterface">
+              <div id="attack">
+                <p>Attamk</p>
+              </div>
+              <div id="run">
+                <p>RAN!!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- GAAAMMEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE -->
+        <div id="stink"></div>
+        <p>can you beat it can you beat it can you beat it can you beat it can you beat it can you beat it can you beat
+          it can you beat it can you beat it can you beat it can you beat it can you beat it can you beat it can you
+          beat it can you beat it can you beat it can you beat it can you beat it can you beat it can you beat it can
+          you beat it can you beat it can you beat it can you beat it can you beat it can you beat it can you beat it
+          can you beat it can you beat it can you beat it can you beat it can you beat it can you beat it can you beat
+          it can you beat it can you beat it can you beat it can you beat it can you beat it can you beat it can you
+          beat it can you beat it can you beat it can you beat it can you beat it can you beat it can you beat it can
+          you beat it can you beat it can you beat it can you beat it can you beat it can you beat it can you beat it
+        </p>
+      </div>
+    </section>
+    <div class="adstwo"></div>
+  </div>
+
+  <script>
+
+
+    var us = document.getElementById("us");
+    var wrapper = document.getElementById("wrapper")
+    var pinkySpeech = document.getElementById("pinkySpeech");
+    var pinky = document.getElementById("pinky");
+    var kyle = document.getElementById("kyle");
+    var kyleScreen = document.getElementById("kyleScreen");
+    var kyleButton = document.getElementById("kyleButton");
+    var shark = document.getElementById("shark");
+    var thank = document.getElementById("thank");
+
+    var count = 0;
+    function fusion() {
+      us.style.animationPlayState = "running";
+      if (window.scrollY == 1000) {
+        pinkySpeech.innerHTML = "NOOOO AHHHHH!!!!"
+        pinkySpeech.style.fontSize = "2.5em"
+        pinkySpeech.style.animationName = "shake";
+        if (count == 0) {
+          window.scroll({ top: 300, behavior: 'smooth' })
+          count++;
+        }
+        if (checker < 1) {
+          shark.style.opacity = "1";
+          kyle.style.opacity = "1";
+        }
+      }
+    }
+
+    var checker = 0;
+    function kyleTime() {
+      if (kyleScreen.style.zIndex = "-3") {
+        kyleScreen.style.zIndex = "3";
+        window.scroll({ top: 0, behavior: 'smooth' })
+      }
+      if (kyleScreen.style.zIndex = "3" && checker !== 0) {
+        kyleScreen.style.zIndex = "-3"
+        kyle.style.opacity = "0";
+        pinky.style.opacity = "0";
+        pinkySpeech.style.opacity = "0";
+        shark.style.opacity = "0";
+        thank.style.animationName = "thank";
+        thank.style.zIndex = "3";
+      }
+      checker++;
+    }
+
+    // GAAAAAAAAAAAAAAAAAAMMMMMMMMMMMMMMMMMMMMMEEEEEEEEEEEEE
+
+    var game = document.getElementById("game");
+    var gamePlayButton = document.getElementById("gamePlayButton");
+    var myMonster = document.getElementById("myMonster");
+    var myHealthBar = document.getElementById("myHealthBar");
+    var myInnerInnerBar = document.getElementById("myInnerInnerBar");
+    var enemyMonster = document.getElementById("enemyMonster");
+    var enemyHealthBar = document.getElementById("enemyHealthBar");
+    var enemyInnerInnerBar = document.getElementById("enemyInnerInnerBar");
+    var gameInterface = document.getElementById("gameInterface");
+    var textInterface = document.getElementById("textInterface");
+    var liveInterface = document.getElementById("liveInterface");
+    var attack = document.getElementById("attack");
+    var run = document.getElementById("run");
+
+
+    gamePlayButton.addEventListener("click", startClicked);
+
+    function startClicked() {
+      myMonster.style.opacity = "1";
+      myHealthBar.style.opacity = "1";
+      enemyMonster.style.opacity = "1";
+      enemyHealthBar.style.opacity = "1";
+      gameInterface.style.opacity = "1";
+      gamePlayButton.style.opacity = "0";
+      game.style.opacity = "1";
+    }
+
+    var gameState = 0;
+    run.addEventListener("click", function () { run.innerHTML = "NO" });
+    attack.addEventListener("click", gameGo);
+
+    function gameGo() {
+      attack.style.pointerEvents = "none";
+      run.style.pointerEvents = "none";
+      if (gameState == 0) {
+        textInterface.innerHTML = "Your little pogchamp attacks the evil stinky!!!";
+        enemyInnerInnerBar.style.width = "66%";
+        enemyInnerInnerBar.style.backgroundColor = "yellow";
+        myMonster.style.marginLeft = "10em";
+        myMonster.style.animationDuration = "0.5s"
+      }
+      if (gameState == 1) {
+        textInterface.innerHTML = "Enemy not pogchamp strikes back with POWERFUL NIPPLE BEAM!!!!";
+        enemyMonster.style.marginLeft = "2em";
+        enemyMonster.style.animationDuration = "0.1s"
+        document.getElementById("nippleBeam").style.opacity = "1";
+        myInnerInnerBar.style.width = "33%";
+        myInnerInnerBar.style.backgroundColor = "red";
+      }
+      if (gameState == 2) {
+        document.getElementById("nippleBeam").style.opacity = "0";
+        enemyMonster.style.animationDuration = "2s"
+        textInterface.innerHTML = "AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH";
+        myMonster.style.marginLeft = "10em";
+        myMonster.style.animationDuration = "0.01s"
+        enemyMonster.style.transition = "3s";
+        enemyMonster.style.backgroundImage = "url('images/explode.jpg')";
+        enemyInnerInnerBar.style.width = "0%";
+        enemyInnerInnerBar.style.backgroundColor = "red";
+        attack.style.color = "red"
+        attack.innerHTML = "CLICK..."
+        attack.fontWeight = "bold";
+      }
+      if (gameState == 3) {
+        document.getElementById("stink").style.display = "block"
+      }
+      gameState++;
+      function pauseChamp() {
+        attack.style.pointerEvents = "all";
+        run.style.pointerEvents = "all";
+        myMonster.style.marginLeft = "0em";
+        myMonster.style.marginTop = "7em";
+        myMonster.style.animationDuration = "2s";
+        enemyMonster.style.marginTop = "1em";
+        enemyMonster.style.marginLeft = "13em";
+      }
+
+      setTimeout(pauseChamp, 3000);
+    }
+
+
+
+
+
+    // function isValid() {
+    //   var password = document.getElementById('password').value;
+    //   if (password == "rawr") { 
+    //     alert('Correct!') 
+    //   }
+    //   else { 
+    //     alert('Wrong Password') 
+    //   }
+    // }
+
+  </script>
+
+</body>
+
+</html>
